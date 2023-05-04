@@ -64,6 +64,8 @@ func RandLightColor() color.RGBA {
 
 //RandColor get random color. 生成随机颜色.
 func RandColor() color.RGBA {
+	// 返回固定颜色
+	return color.RGBA{0x09,0xAC,0xDB,0}
 	red := rand.Intn(255)
 	green := rand.Intn(255)
 	var blue int
