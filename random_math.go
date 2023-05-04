@@ -41,7 +41,8 @@ func random(min int64, max int64) float64 {
 
 //RandDeepColor get random deep color. 随机生成深色系.
 func RandDeepColor() color.RGBA {
-
+	// 返回固定颜色
+	return color.RGBA{0x09,0xAC,0xDB,0}
 	randColor := RandColor()
 
 	increase := float64(30 + rand.Intn(255))
@@ -64,8 +65,6 @@ func RandLightColor() color.RGBA {
 
 //RandColor get random color. 生成随机颜色.
 func RandColor() color.RGBA {
-	// 返回固定颜色
-	return color.RGBA{0x09,0xAC,0xDB,0}
 	red := rand.Intn(255)
 	green := rand.Intn(255)
 	var blue int
