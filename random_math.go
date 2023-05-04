@@ -42,7 +42,7 @@ func random(min int64, max int64) float64 {
 //RandDeepColor get random deep color. 随机生成深色系.
 func RandDeepColor() color.RGBA {
 	// 返回固定颜色
-	return color.RGBA{0x09,0xAC,0xBD,0}
+	return color.RGBA{9,172,189,1}
 	randColor := RandColor()
 
 	increase := float64(30 + rand.Intn(255))
